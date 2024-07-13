@@ -1,0 +1,1941 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+
+  <body class="bg-[#EDEDED]">
+    <div class="flex flex-col items-center mx-auto overflow-hidden space-y-16">
+      <section
+        id="header"
+        class="w-full max-w-[82.25rem] p-5 sm:p-8 xl:m-6 min-h-[44.875rem] h-[90vh] bg-[#2042B6] relative xl:rounded-[18px]"
+      >
+        <header>
+          <nav class="flex items-center justify-between w-full relative py-3">
+            <div>
+              <a href="/"><img src="./images/logo.png" alt="logo" /></a>
+            </div>
+            <div class="flex items-center space-x-2.5 -mr-[0.875rem]">
+              <button class="border p-2.5 rounded-full max-md:hidden">
+                <img src="./images/shareIcon.svg" alt />
+              </button>
+
+              <div
+                class="border p-2.5 px-4 rounded-full flex flex-col cursor-pointer max-md:hidden"
+              >
+                <span class="text-white font-messina-sans text-xs"
+                  >Download the 2024 Report</span
+                >
+              </div>
+
+              <button
+                id="hamburgerButton"
+                type="button"
+                class="inline-flex items-center p-2 justify-center text-sm text-white rounded-lg hover:bg-gray-50/5 focus:outline-none focus:ring-2 fous:ring-gray-200"
+                aria-controls="navbar-default"
+                aria-expanded="false"
+              >
+                <svg
+                  class="w-5 h-5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 17 14"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 1h15M1 7h15M1 13h15"
+                  />
+                </svg>
+              </button>
+            </div>
+          </nav>
+          <div
+            class="hidden absolute right-0.5 top-0.5 rounded-[18px] w-full z-50 max-w-[338px] h-full max-h-[500px] bg-white py-10 pl-10 flex-col gap-8 origin-right duration-1000 max-md:pt-[1.625rem] max-md:pr-1.5"
+            id="toggleNavbar"
+          >
+            <div class="flex items-center space-x-2.5 max-md:justify-between">
+              <button
+                class="border rounded-full w-[42px] h-[42px] bg-[#AFCD80] bg-[url('./images/shareIcon.svg')] bg-no-repeat bg-center"
+              ></button>
+
+              <button
+                class="border p-2.5 px-4 rounded-full bg-[#2042B6] flex flex-col cursor-pointer"
+              >
+                <span class="text-white font-messina-sans text-xs"
+                  >Download the 2024 Report</span
+                >
+              </button>
+              <button
+                id="hamburgerCloseButton"
+                class="p-2 hover:bg-gray-100 hover:rounded-full focus:outline-none focus:ring-2 fous:ring-gray-200 md:mr-10"
+              >
+                <img src="images/xIcon.svg" alt="" />
+              </button>
+            </div>
+            <ul
+              class="flex flex-col gap-5 rounded-lg font-messina-sans font-normal text-lg leading-[21.6px] texy-[#191618]"
+            >
+              <li><a href="" class="">The WPPOOL Index</a></li>
+              <li><a href="" class="">All Companies</a></li>
+              <li><a href="" class="">Potential Future Listings</a></li>
+              <li><a href="" class="">State of USA</a></li>
+              <li><a href="" class="">Stories & Ideas</a></li>
+              <li><a href="" class="">About WPPOOL</a></li>
+              <li><a href="" class="">WPPOOL Portfolio Companies</a></li>
+            </ul>
+            <div
+              class="font-Nantes font-normal text-[21px] leading-[25.2px] mt-2 text-[#2042B6]"
+            >
+              <a href=""
+                ><span>Visit </span> <span class="uppercase">wppool</span></a
+              >
+            </div>
+          </div>
+        </header>
+
+        <div>
+          <div>
+            <div class="max-sm:hidden">
+              <div
+                class="mix-blend-multiply w-full max-w-[34.3125rem] h-full max-h-[33.875rem] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+              >
+                <div
+                  class="relative w-full h-full bg-[url('images/dots.svg')] bg-no-repeat bg-center"
+                ></div>
+              </div>
+              <div
+                class="w-[30.6875rem] h-[26.6875rem] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+              >
+                <div
+                  class="relative top-1/2 left-1/2 -ml-3.5 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[url('images/Rectangle-1.svg')] bg-no-repeat bg-center"
+                ></div>
+              </div>
+            </div>
+
+            <div
+              class="absolute max-sm:top-[40%] w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 box-border max-w-[71.5625rem] items-center"
+            >
+              <div
+                class="relative text-white flex flex-col space-y-1 mt-3 h-full w-full items-start text-center"
+              >
+                <h1
+                  class="font-Nantes font-normal text-[4.875rem] leading-[5.85rem] w-full"
+                >
+                  The WPPOOL Index
+                </h1>
+
+                <p
+                  class="font-messina-sans w-full leading-[25.2px] text-[21px] font-thin opacity-95"
+                >
+                  Monitor the performance of emerging, publicly traded,
+                  financial technology companies
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <aside
+            class="absolute bottom-[11%] md:left-14 text-white flex flex-col gap-16 max-md:flex-row max-md:gap-5 max-md:flex-wrap max-md:text-sm max-md:bottom-[16%]"
+          >
+            <div class="flex flex-col gap-2.5">
+              <span class="font-Nantes text-[36px] leaing-[50.72px]">60</span>
+              <span class="text-[#CDCDCD] font-neue-haas-unica -mt-1"
+                >Companies</span
+              >
+            </div>
+            <div class="flex flex-col gap-2.5">
+              <span class="font-Nantes text-[36px] leaing-[50.72px]"
+                >$100B</span
+              >
+              <span class="text-[#CDCDCD] font-neue-haas-unica -mt-1"
+                >Market cap</span
+              >
+            </div>
+            <div class="flex flex-col gap-2.5">
+              <span class="font-Nantes text-[36px] leaing-[50.72px]">3.5x</span>
+              <span class="text-[#CDCDCD] font-neue-haas-unica -mt-1"
+                >Revenue multiple</span
+              >
+            </div>
+            <div class="flex flex-col gap-2.5">
+              <span class="font-Nantes text-[36px] leaing-[50.72px]">60%</span>
+              <span class="text-[#CDCDCD] font-neue-haas-unica -mt-1"
+                >LTM avg. revenue growth rate</span
+              >
+            </div>
+          </aside>
+
+          <a href="#footer">
+            <button
+              class="absolute bottom-10 right-14 bg-white rounded-full p-7 shadow-[0px_24px_24px_0px_#0000005C]"
+            >
+              <img src="images/arrow_downward_alt.svg" alt />
+            </button>
+          </a>
+        </div>
+      </section>
+
+      <main class="space-y-10 flex flex-col items-center w-full">
+        <!-- Index chart -->
+        <section
+          id="indexSection"
+          class="w-full max-w-[82.25rem] h-auto relative bg-white p-8 space-y-10"
+        >
+          <nav
+            id="stickyNav"
+            class="flex max-w-[79.75rem] items-center justify-between w-full bg-[#EDEDED] py-3 px-5 rounded-lg"
+          >
+            <div>
+              <a href="/"><img src="./images/logoDark.png" alt="logo" /></a>
+            </div>
+            <div class="flex items-center space-x-2.5">
+              <button
+                class="border max-sm:hidden w-[42px] h-[42px] bg-[url('./images/shareIconBlack.svg')] bg-no-repeat bg-center rounded-full border-[#AFCD80]"
+              ></button>
+
+              <div
+                class="max-sm:hidden border p-2.5 px-4 rounded-full flex flex-col border-[#115CD9] cursor-pointer"
+              >
+                <span class="text-white invert font-messina-sans text-xs"
+                  >Download the 2024 Report
+                </span>
+              </div>
+
+              <button class="ml-2">
+                <img src="images/menu.svg" alt class="mt-2 invert" />
+              </button>
+            </div>
+          </nav>
+          <div
+            class="flex max-lg:flex-col max-lg:gap-10 gap-5 w-full max-w-[76.875rem]"
+          >
+            <aside
+              class="max-2xl::w-full min-w-[14rem] h-full 2xl:h-[37.625rem] max-h-[37.625rem] bg-[#EFF3F6] py-2 px-2.5 rounded-2xl flex flex-col space-y-3"
+            >
+              <button
+                class="font-Nantes bg-[#2042B6] text-base text-white py-1 px-2.5 rounded-lg leading-[22.56px] flex justify-between items-center shadow-[0px_24px_24px_0px_#0000001F]"
+              >
+                <span> The Index</span>
+                <span class="text-lg font-medium text-white">-</span>
+              </button>
+              <button
+                class="font-Nantes text-base text-[#647888] py-1 px-2.5 rounded-lg leading-[22.56px] flex justify-between items-center"
+              >
+                <span> The Index Tab Two</span>
+                <span class="text-lg font-medium">+</span>
+              </button>
+              <button
+                class="font-Nantes text-base text-[#647888] py-1 px-2.5 rounded-lg leading-[22.56px] flex justify-between items-center"
+              >
+                <span> The Index Tab Three</span>
+                <span class="text-lg font-medium">+</span>
+              </button>
+              <button
+                class="font-Nantes text-base text-[#647888] py-1 px-2.5 rounded-lg leading-[22.56px] flex justify-between items-center"
+              >
+                <span> The Index Tab Four</span>
+                <span class="text-lg font-medium">+</span>
+              </button>
+              <button
+                class="font-Nantes text-base text-[#647888] py-1 px-2.5 rounded-lg leading-[22.56px] flex justify-between items-center"
+              >
+                <span> The Index Tab Five</span>
+                <span class="text-lg font-medium">+</span>
+              </button>
+            </aside>
+            <article class="flex w-full flex-col gap-5 flex-grow">
+              <div class="flex space-x-1 items-center">
+                <img src="images/Union.svg" alt />
+                <span
+                  class="text-[2.25rem] max-sm:text-[2rem] font-Nantes leading-[50.72px] mt-1"
+                  >The WPPOOL Index</span
+                >
+              </div>
+              <div
+                class="flex max-sm:flex-col flex-wrap gap-5 xl:justify-between"
+              >
+                <div
+                  class="min-w-[230px] rounded-lg h-[50px] bg-[#F3F3F3] flex justify-between py-6 px-3 items-center"
+                >
+                  <span
+                    class="text-[#FC714D] text-[30px] leading-[36px] font-Nantes"
+                    >+66.2%</span
+                  >
+                  <div class="flex space-x-2">
+                    <span
+                      class="text-[#191618] text-[12px] leading-[14.4px] font-messina-sans w-[55px] text-right"
+                      >WPPOOL Index</span
+                    >
+                    <div class="w-1 h-[30px] bg-[#FC714D]"></div>
+                  </div>
+                </div>
+                <div
+                  class="min-w-[230px] rounded-lg h-[50px] bg-[#F3F3F3] flex justify-between py-6 px-3 items-center"
+                >
+                  <span
+                    class="text-[#615DE3] text-[30px] leading-[36px] font-Nantes"
+                    >+26.6%</span
+                  >
+                  <div class="flex space-x-2">
+                    <span
+                      class="text-[#191618] text-[12px] leading-[14.4px] font-messina-sans w-[55px] text-right"
+                      >Goolge Index</span
+                    >
+                    <div class="w-1 h-[30px] bg-[#615DE3]"></div>
+                  </div>
+                </div>
+                <div
+                  class="min-w-[230px] rounded-lg h-[50px] bg-[#F3F3F3] flex justify-between py-6 px-3 items-center"
+                >
+                  <span
+                    class="text-[#7CA63A] text-[30px] leading-[36px] font-Nantes"
+                    >+34.1%</span
+                  >
+                  <div class="flex space-x-2">
+                    <span
+                      class="text-[#191618] text-[12px] leading-[14.4px] font-messina-sans w-[55px] text-right"
+                      >Microsoft</span
+                    >
+                    <div class="w-1 h-[30px] bg-[#7CA63A]"></div>
+                  </div>
+                </div>
+                <div
+                  class="min-w-[230px] rounded-lg h-[50px] bg-[#F3F3F3] flex justify-between py-6 px-3 items-center"
+                >
+                  <span
+                    class="text-[#6F34A1] text-[30px] leading-[36px] font-Nantes"
+                    >+17%</span
+                  >
+                  <div class="flex space-x-2">
+                    <span
+                      class="text-[#191618] text-[12px] leading-[14.4px] font-messina-sans w-[55px] text-right"
+                      >Twitter Index</span
+                    >
+                    <div class="w-1 h-[30px] bg-[#6F34A1]"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-4 flex flex-col gap-4">
+                <div class="flex flex-wrap gap-3 justify-between items-center">
+                  <div class="flex space-x-3 h-[26px] *:shadow-lg">
+                    <div
+                      class="bg-[#2042B6] w-[178px] flex justify-between py-2 px-2.5 rounded-full items-center"
+                    >
+                      <span
+                        class="text-white text-xs leading-[14.4px] font-messina-sans"
+                        >Sectors</span
+                      >
+                      <img src="images/arrow_drop_down.svg" alt />
+                    </div>
+                    <div
+                      class="bg-[#2042B6] w-[178px] flex justify-between py-2 px-2.5 rounded-full items-center"
+                    >
+                      <span
+                        class="text-white text-xs leading-[14.4px] font-messina-sans"
+                        >Types of IPO</span
+                      >
+                      <img src="images/arrow_drop_down.svg" alt />
+                    </div>
+                  </div>
+                  <div
+                    class="bg-[#EFF3F6] w-[232px] flex gap-0.5 *:px-2 *:py-1.5 *:rounded-full py-1 px-1 rounded-full items-center justify-end"
+                  >
+                    <span
+                      class="text-[#748DA1] text-xs leading-[14.4px] font-messina-sans"
+                      >1Y</span
+                    >
+                    <span
+                      class="text-[#748DA1] text-xs leading-[14.4px] font-messina-sans"
+                      >YTD</span
+                    >
+                    <span
+                      class="text-xs leading-[14.4px] font-messina-sans bg-[#2042B6] text-white"
+                      >6M</span
+                    >
+                    <span
+                      class="text-[#748DA1] text-xs leading-[14.4px] font-messina-sans"
+                      >1M</span
+                    >
+                    <span
+                      class="text-[#748DA1] text-xs leading-[14.4px] font-messina-sans"
+                      >1W</span
+                    >
+                  </div>
+                </div>
+                <div>
+                  <canvas
+                    id="myChart"
+                    class="max-w-[940px] w-full min-h-[300px] h-full max-h-[350px]"
+                  ></canvas>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+        <!-- All Companies -->
+        <section class="flex flex-col gap-7 pt-10 items-center w-full">
+          <div
+            class="w-full pt-14 max-w-[82.25rem] h[37.5rem] md:pr-14 relative bg-white p-8 rounded-[1.25rem] space-y-10 shadow-[0px_66px_66px_0px_#0000000A]"
+          >
+            <div class="max-w-[76.875rem] flex flex-col gap-10">
+              <div class="flex flex-wrap gap-5 justify-between">
+                <span
+                  class="text-[#191618] text-[3rem] leading-[57.6px] font-Nantes ml-4"
+                  >All Companies</span
+                >
+                <div
+                  class="flex w-full max-w-[588px] items-center py-1 gap-3 bg-[#F3F3F3] border border-[#DADADA] rounded-[0.5rem] px-5"
+                >
+                  <img
+                    src="images/search.svg"
+                    class="w-[19px] h-[19px] mt-[1px]"
+                    alt=""
+                  />
+                  <input
+                    class="w-[36.75rem] font-Nantes text-[1.5rem] leading-[1.8rem] bg-transparent outline-none h-[3.625rem] text-[#191618] placeholder:text-[#191618]"
+                    placeholder="Search Companies"
+                  />
+                </div>
+              </div>
+
+              <div
+                id="allComSec"
+                class="max-h-[27.375rem] h-full overflow-y-scroll max-w-[78.5rem] w-ull"
+              >
+                <table class="min-w-full table-auto w-full">
+                  <thead class="font-messina-sans">
+                    <tr>
+                      <th
+                        class="pr-6 pl-4 py-3 text-start text-base leading-[1.2rem] font-bold"
+                      >
+                        Company
+                      </th>
+                      <th
+                        class="px-3 py-3 text-sm leading-[1.05rem] font-normal"
+                      ></th>
+
+                      <th
+                        class="px-3 py-3 text-sm leading-[1.05rem] font-normal"
+                      >
+                        Ticker
+                      </th>
+                      <th
+                        class="px-3 py-3 text-sm leading-[1.05rem] font-normal"
+                      >
+                        Vertical
+                      </th>
+                      <th
+                        class="px-3 py-3 text-sm leading-[1.05rem] font-normal"
+                      ></th>
+                      <th
+                        class="px-3 py-3 text-sm leading-[1.05rem] font-normal"
+                      ></th>
+
+                      <th
+                        class="px-3 py-3 text-sm leading-[1.05rem] font-normal"
+                      >
+                        Price
+                      </th>
+                      <th
+                        class="px-3 py-3 text-sm leading-[1.05rem] font-normal"
+                      >
+                        Market Cap ($B)
+                      </th>
+                      <th
+                        class="px-3 py-3 text-sm leading-[1.05rem] font-normal"
+                      >
+                        Revenue Growth
+                      </th>
+                      <th
+                        class="px-3 py-3 text-sm leading-[1.05rem] font-normal"
+                      >
+                        Gross Margin
+                      </th>
+                      <th
+                        class="px-3 py-3 text-sm leading-[1.05rem] font-normal"
+                      >
+                        EV/Revenue
+                      </th>
+                      <th
+                        class="px-3 py-3 text-sm leading-[1.05rem] font-normal"
+                      >
+                        YTD Performance
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody id="table-body" class="font-Nantes">
+                    <!-- Rows will be inserted here by JavaScript -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="max-w-[482px] w-full h-full max-h-[47px] flex max-sm:flex-col gap-3 items-center text-[1rem] leading-[1.2rem] text-white *:px-5 *:py-4 *:rounded-full *:shadow-[0px_24px_36px_0px_#00000040]"
+          >
+            <button class="bg-[#2042B6] w-[16.8125rem]">
+              Download ‘All Companies’ Data
+            </button>
+            <button class="bg-[#2042B6] w-[12.5625rem] text-center">
+              View Methodology
+            </button>
+          </div>
+        </section>
+        <!-- Potential Future Listings -->
+        <section
+          class="w-full max-md:px-5 max-w-[73.75rem] relative pt-32 flex flex-col gap-7"
+        >
+          <div class="flex flex-col max-sm:gap-3 gap-2">
+            <h2
+              class="text-5xl text-center leading-[57.6px] text-[#191618] font-Nantes font-normal"
+            >
+              Potential Future Listings
+            </h2>
+            <p
+              class="text-base leading-[25.6px] font-[350] text-[#191618] max-w-[880px] font-messina-sans"
+            >
+              Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              vulputate libero et velit interdum, ac aliquet odio mattis. Class
+              aptent taciti sociosqu ad litora torquent per conubia nostra, per
+              inceptos himenaeos.
+            </p>
+          </div>
+          <div
+            class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 max-sm:gap-2 gap-5"
+          >
+            <div
+              class="max-w-[13.75rem] w-full h-full min-h-[7.5rem] bg-white flex flex-col items-center justify-center rounded-lg"
+            >
+              <img
+                src="images/partners-icon/Group 227.svg"
+                class="w-[133px h-[55.34px]]"
+                alt=""
+              />
+            </div>
+            <div
+              class="max-w-[13.75rem] w-full h-full min-h-[7.5rem] bg-white flex flex-col items-center justify-center rounded-lg"
+            >
+              <img
+                src="images/partners-icon/Group 219.svg"
+                class="w-[133px h-[55.34px]]"
+                alt=""
+              />
+            </div>
+            <div
+              class="max-w-[13.75rem] w-full h-full min-h-[7.5rem] bg-white flex flex-col items-center justify-center rounded-lg"
+            >
+              <img
+                src="images/partners-icon/Group 220.svg"
+                class="w-[133px h-[55.34px]]"
+                alt=""
+              />
+            </div>
+            <div
+              class="max-w-[13.75rem] w-full h-full min-h-[7.5rem] bg-white flex flex-col items-center justify-center rounded-lg"
+            >
+              <img
+                src="images/partners-icon/Group 221.svg"
+                class="w-[133px h-[55.34px]]"
+                alt=""
+              />
+            </div>
+            <div
+              class="max-w-[13.75rem] w-full h-full min-h-[7.5rem] bg-white flex flex-col items-center justify-center rounded-lg"
+            >
+              <img
+                src="images/partners-icon/Group 222.svg"
+                class="w-[133px h-[55.34px]]"
+                alt=""
+              />
+            </div>
+            <div
+              class="max-w-[13.75rem] w-full h-full min-h-[7.5rem] bg-white flex flex-col items-center justify-center rounded-lg"
+            >
+              <img
+                src="images/partners-icon/Group 226.svg"
+                class="w-[133px h-[55.34px]]"
+                alt=""
+              />
+            </div>
+            <div
+              class="max-w-[13.75rem] w-full h-full min-h-[7.5rem] bg-white flex flex-col items-center justify-center rounded-lg"
+            >
+              <img
+                src="images/partners-icon/Group 223.svg"
+                class="w-[133px h-[55.34px]]"
+                alt=""
+              />
+            </div>
+            <div
+              class="max-w-[13.75rem] w-full h-full min-h-[7.5rem] bg-white flex flex-col items-center justify-center rounded-lg"
+            >
+              <img
+                src="images/partners-icon/Group 224.svg"
+                class="w-[133px h-[55.34px]]"
+                alt=""
+              />
+            </div>
+            <div
+              class="max-w-[13.75rem] w-full h-full min-h-[7.5rem] bg-white flex flex-col items-center justify-center rounded-lg"
+            >
+              <img
+                src="images/partners-icon/Group 225.svg"
+                class="w-[133px h-[55.34px]]"
+                alt=""
+              />
+            </div>
+            <div
+              class="max-w-[13.75rem] w-full h-full min-h-[7.5rem] bg-white flex flex-col items-center justify-center rounded-lg"
+            >
+              <img
+                src="images/partners-icon/Group.svg"
+                class="w-[133px h-[55.34px]]"
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
+        <!-- State of USA -->
+        <section
+          class="w-full max-md:px-5 max-w-[73.75rem] h-fit min-h-[700px] relative pt-32 flex flex-col gap-3"
+        >
+          <div
+            class="w-[616px] h-[595.35px] absolute -right-6 mt-14 z-0 bg-[url('images/sliderBGImg.svg')] bg-[length:616px_595.35px] bg-no-repeat"
+          ></div>
+
+          <div class="w-[260px]">
+            <span
+              class="text-5xl leading-[67.63px] text-[#191618] font-Nantes font-normal"
+              >State of USA</span
+            >
+            <div
+              class="w-[200px] bg-[#2042B6] rounded-full text-white h-[58px] text-[42px] leading-[59.18px] items-center px-5 font-Nantes relative overflow-hidden"
+            >
+              <select
+                name="yearSelection"
+                id="yearSelection"
+                class="appearance-none bg-[#2042B6] outline-none w-full bg-[url('images/arrow_drop_down.svg')] bg-no-repeat bg-[right] bg-[length:12px] px-1 items-center"
+              >
+                <option value="2024">2024</option>
+                <option value="">2023</option>
+                <option value="">2022</option>
+              </select>
+            </div>
+          </div>
+          <div
+            class="flex mt-3 flex-col gap-5 relative h-full min-h-[360px] max-sm:mb-5"
+          >
+            <p
+              class="font-[350] text-base leading-[25.6px] font-messina-sans text-[#191618] max-w-[885px]"
+            >
+              Click through the slides or download the report to view natively
+              on your device.
+            </p>
+            <div
+              id="slider"
+              class="flex absolute w-[120%] max-w-[1300px] overflow-scroll max-sm:top-16 top-10 gap-5 max-sm:*:object-cover"
+            >
+              <div
+                class="min-w-[580px] h-full relative rounded-md overflow-hidden shadow-[_0px_36px_36px_0px_#0000001F]"
+              >
+                <img src="images/slider-images/1.png" class=" " alt="" fill />
+              </div>
+              <div
+                class="min-w-[580px] relative rounded-md overflow-hidden shadow-[_0px_36px_36px_0px_#0000001F]"
+              >
+                <img src="images/slider-images/2.png" class="" alt="" />
+              </div>
+              <div
+                class="min-w-[580px] relative rounded-md overflow-hidden shadow-[_0px_36px_36px_0px_#0000001F]"
+              >
+                <img src="images/slider-images/3.png" class="" alt="" />
+              </div>
+              <div
+                class="min-w-[580px] relative rounded-md overflow-hidden shadow-[_0px_36px_36px_0px_#0000001F]"
+              >
+                <img src="images/slider-images/2.png" class="" alt="" />
+              </div>
+              <div
+                class="min-w-[580px] relative rounded-md overflow-hidden shadow-[_0px_36px_36px_0px_#0000001F]"
+              >
+                <img src="images/slider-images/3.png" class="" alt="" />
+              </div>
+              <div
+                class="min-w-[580px] relative rounded-md overflow-hidden shadow-[_0px_36px_36px_0px_#0000001F]"
+              >
+                <img src="images/slider-images/2.png" class="" alt="" />
+              </div>
+              <div
+                class="min-w-[580px] relative rounded-md overflow-hidden shadow-[_0px_36px_36px_0px_#0000001F]"
+              >
+                <img src="images/slider-images/3.png" class="" alt="" />
+              </div>
+              <div
+                class="min-w-[580px] relative rounded-md overflow-hidden shadow-[_0px_36px_36px_0px_#0000001F]"
+              >
+                <img src="images/slider-images/2.png" class="" alt="" />
+              </div>
+              <div
+                class="min-w-[580px] relative rounded-md overflow-hidden shadow-[_0px_36px_36px_0px_#0000001F]"
+              >
+                <img src="images/slider-images/3.png" class="" alt="" />
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex max-sm:flex-col items-center flex-wrap gap-5 justify-between z-10"
+          >
+            <div class="flex flex-wrap gap-8">
+              <div class="flex gap-3">
+                <button
+                  class="bg-white w-[56px] h-[56px] rounded-full flex flex-col items-center justify-center shadow-[_0px_36px_36px_0px_#0000001F]"
+                >
+                  <img
+                    src="images/arrow_downward_alt.svg"
+                    class="rotate-90"
+                    alt=""
+                  />
+                </button>
+                <button
+                  class="bg-white w-[56px] h-[56px] rounded-full flex flex-col items-center justify-center shadow-[_0px_36px_36px_0px_#0000001F]"
+                >
+                  <img
+                    src="images/arrow_downward_alt.svg"
+                    class="-rotate-90"
+                    alt=""
+                  />
+                </button>
+              </div>
+              <div
+                class="text-base leading-[19.2px] font-normal font-messina-sans flex gap-2.5 items-center"
+              >
+                <span class="">Pages</span>
+                <div
+                  class="w-[131px] h-[56px] bg-white rounded-full overflow-hidden px-5 items-center shadow-[0px_24px_36px_0px_#00000040]"
+                >
+                  <select
+                    name=""
+                    id=""
+                    class="appearance-none bg-white outline-none w-full bg-[url('images/arrow_drop_down2.svg')] bg-no-repeat bg-[right_top_1.6rem] bg-[length:10px] px-1 items-center h-full"
+                  >
+                    <option value="">1 and 2</option>
+                  </select>
+                </div>
+                <span>of 37</span>
+              </div>
+            </div>
+            <div class="max-md:mt-10 md:mr-20">
+              <button
+                class="w-[240px] h-[56px] bg-[#2042B6] text-white shadow-[0px_24px_36px_0px_#00000040] rounded-full font-messina-sans text-base leading-[19.2px] font-normal"
+              >
+                Download the 2023 Report
+              </button>
+            </div>
+          </div>
+        </section>
+        <!--   Stories and ideas -->
+        <section
+          class="w-full max-md:px-5 max-w-[73.75rem] relative pt-48 flex flex-col gap-[6.5rem]"
+        >
+          <div class="space-y-2 max-md:text-center">
+            <h2
+              class="text-5xl leading-[57.6px] font-Nantes font-normal text-[#191618]"
+            >
+              Stories & Ideas
+            </h2>
+            <p
+              class="text-xl leading-6 font-[350] font-messina-sans text-[#191618]"
+            >
+              The latest news and updates
+            </p>
+          </div>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 gap-y-[5.625rem]"
+          >
+            <div class="relative w-[380px] h-[220px] bg-white rounded-lg">
+              <div
+                class="w-[120px] h-[120px] shadow-[0px_16px_12px_0px_#0000000A] rounded overflow-hidden absolute -top-12 left-4"
+              >
+                <img src="images/human.png" alt="" />
+              </div>
+
+              <div class="flex flex-col gap-3 absolute bottom-5 left-4">
+                <div class="max-w-[323px] space-y-[0.1875rem]">
+                  <h3
+                    class="text-sm font-messina-sans leading-[19.6px] font-normal text-[#2042B6]"
+                  >
+                    By: Sahabuddin Sagor
+                  </h3>
+                  <p
+                    class="text-base font-Nantes leading-[22.4px] font-normal text-[#191618]"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maxime mollitia.
+                  </p>
+                </div>
+                <button
+                  class="w-[93px] h-[30px] bg-[#2042B6] rounded-full text-white font-neue-haas-unica font-normal text-sm leading-[21.08px]"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+            <div class="relative w-[380px] h-[220px] bg-white rounded-lg">
+              <div
+                class="w-[120px] h-[120px] shadow-[0px_16px_12px_0px_#0000000A] rounded overflow-hidden absolute -top-12 left-4"
+              >
+                <img src="images/human2.png" alt="" />
+              </div>
+
+              <div class="flex flex-col gap-3 absolute bottom-5 left-4">
+                <div class="max-w-[323px] space-y-[0.1875rem]">
+                  <h3
+                    class="text-sm font-messina-sans leading-[19.6px] font-normal text-[#2042B6]"
+                  >
+                    By: Sahabuddin Sagor
+                  </h3>
+                  <p
+                    class="text-base font-Nantes leading-[22.4px] font-normal text-[#191618]"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maxime mollitia.
+                  </p>
+                </div>
+                <button
+                  class="w-[93px] h-[30px] bg-[#2042B6] rounded-full text-white font-neue-haas-unica font-normal text-sm leading-[21.08px]"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+
+            <div class="relative w-[380px] h-[220px] bg-white rounded-lg">
+              <div
+                class="w-[120px] h-[120px] shadow-[0px_16px_12px_0px_#0000000A] rounded overflow-hidden absolute -top-12 left-4"
+              >
+                <img src="images/human.png" alt="" />
+                <div
+                  class="w-[3.75rem] absolute top-0 left-0 bg-white items-center"
+                >
+                  <img src="images/carrot.png" class="px-2 py-1.5" alt="" />
+                </div>
+              </div>
+
+              <div class="flex flex-col gap-3 absolute bottom-5 left-4">
+                <div class="max-w-[323px] space-y-[0.1875rem]">
+                  <h3
+                    class="text-sm font-messina-sans leading-[19.6px] font-normal text-[#2042B6]"
+                  >
+                    By: Sahabuddin Sagor
+                  </h3>
+                  <p
+                    class="text-base font-Nantes leading-[22.4px] font-normal text-[#191618]"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maxime mollitia.
+                  </p>
+                </div>
+                <button
+                  class="w-[93px] h-[30px] bg-[#2042B6] rounded-full text-white font-neue-haas-unica font-normal text-sm leading-[21.08px]"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+            <div class="relative w-[380px] h-[220px] bg-white rounded-lg">
+              <div
+                class="w-[120px] h-[120px] shadow-[0px_16px_12px_0px_#0000000A] rounded overflow-hidden absolute -top-12 left-4"
+              >
+                <img src="images/human.png" alt="" />
+              </div>
+
+              <div class="flex flex-col gap-3 absolute bottom-5 left-4">
+                <div class="max-w-[323px] space-y-[0.1875rem]">
+                  <h3
+                    class="text-sm font-messina-sans leading-[19.6px] font-normal text-[#2042B6]"
+                  >
+                    By: Sahabuddin Sagor
+                  </h3>
+                  <p
+                    class="text-base font-Nantes leading-[22.4px] font-normal text-[#191618]"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maxime mollitia.
+                  </p>
+                </div>
+                <button
+                  class="w-[93px] h-[30px] bg-[#2042B6] rounded-full text-white font-neue-haas-unica font-normal text-sm leading-[21.08px]"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+            <div class="relative w-[380px] h-[220px] bg-white rounded-lg">
+              <div
+                class="w-[120px] h-[120px] shadow-[0px_16px_12px_0px_#0000000A] rounded overflow-hidden absolute -top-12 left-4"
+              >
+                <img src="images/human2.png" alt="" />
+              </div>
+
+              <div class="flex flex-col gap-3 absolute bottom-5 left-4">
+                <div class="max-w-[323px] space-y-[0.1875rem]">
+                  <h3
+                    class="text-sm font-messina-sans leading-[19.6px] font-normal text-[#2042B6]"
+                  >
+                    By: Sahabuddin Sagor
+                  </h3>
+                  <p
+                    class="text-base font-Nantes leading-[22.4px] font-normal text-[#191618]"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maxime mollitia.
+                  </p>
+                </div>
+                <button
+                  class="w-[93px] h-[30px] bg-[#2042B6] rounded-full text-white font-neue-haas-unica font-normal text-sm leading-[21.08px]"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+
+            <div class="relative w-[380px] h-[220px] bg-white rounded-lg">
+              <div
+                class="w-[120px] h-[120px] shadow-[0px_16px_12px_0px_#0000000A] rounded overflow-hidden absolute -top-12 left-4"
+              >
+                <img src="images/human.png" alt="" />
+                <div
+                  class="w-[3.75rem] absolute top-0 left-0 bg-white items-center oveflow-hidden"
+                >
+                  <img src="images/carrot.png" class="px-2 py-1.5" alt="" />
+                </div>
+              </div>
+
+              <div class="flex flex-col gap-3 absolute bottom-5 left-4">
+                <div class="max-w-[323px] space-y-[0.1875rem]">
+                  <h3
+                    class="text-sm font-messina-sans leading-[19.6px] font-normal text-[#2042B6]"
+                  >
+                    By: Sahabuddin Sagor
+                  </h3>
+                  <p
+                    class="text-base font-Nantes leading-[22.4px] font-normal text-[#191618]"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maxime mollitia.
+                  </p>
+                </div>
+                <button
+                  class="w-[93px] h-[30px] bg-[#2042B6] rounded-full text-white font-neue-haas-unica font-normal text-sm leading-[21.08px]"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="py-16">
+          <div class="border-t border-[#90B8F0] w-[73.75rem] h-[1px]"></div>
+        </div>
+        <!--  About -->
+        <section
+          class="w-full max-w-[73.75rem] relative bg-white p-5 lg:p-14 lg:bg-[url('images/banner-img3.png')] bg-no-repeat bg-right bg-[length:32.6875rem_26.25rem] h-full min-h-[26.25rem] rounded-xl max-sm:h-[60vh]"
+        >
+          <div
+            class="max-w-[39.25rem] w-full h-full flex flex-col min-h-[16.5rem] relative max-sm:min-h-[rem]"
+          >
+            <div class="w-full max-w-[29.3125rem]">
+              <h2
+                class="max-md:text-center font-Nantes font-normal text-5xl leading-[67.63px] text-[#191618]"
+              >
+                About WPPOOL
+              </h2>
+              <h3
+                class="font-Nantes font-normal text-3xl leading--[42.27px] text-[#7D7F81]"
+              >
+                Investing in wppool for over 50 years
+              </h3>
+              <p
+                class="mt-3 font-messina-sans font-[350] text-base text-[#191618] max-w-[38rem]"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                mollitia, molestiae quas vel sint commodi
+                <span class="border-b border-[#194618]"
+                  ><a target="_blank" href="https://wppool.dev/"
+                    >repudiandae</a
+                  ></span
+                >
+                consequuntur voluptatum laborum numquam blanditiis harum
+                quisquam eius sed odit fugiat iusto fuga praesentium optio,
+                eaque rerum! Provident similique accusantium nemo autem.
+              </p>
+            </div>
+          </div>
+          <div class="absolute bottom-7 l">
+            <button
+              class="max-w-[10.4375rem] bg-[#2042B6] text-white py-3 px-4 rounded-full font-normal text-base leading-[23.09px] font-messina-sans shadow-[0px_24px_36px_0px_#00000040]"
+            >
+              Contact WPPOOL
+            </button>
+          </div>
+        </section>
+        <div class="py-16">
+          <div class="border-t border-[#90B8F0] w-[73.75rem] h-[1px]"></div>
+        </div>
+        <!--  Portfolio -->
+        <section
+          class="w-full max-sm:p-5 max-w-[73.75rem] relative flex flex-col gap-6"
+        >
+          <div>
+            <h2
+              class="max-md:text-center font-Nantes font-normal text-5xl leading-[67.63px] text-[#191618]"
+            >
+              Selected WPPOOL Portfolio Companies
+            </h2>
+          </div>
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
+            <div
+              class="max-w-[220px] h-[120px] bg-white rounded-md flex flex-col items-center justify-center"
+            >
+              <img src="images/companies/alibaba.png" class="" alt="" />
+            </div>
+            <div
+              class="max-w-[220px] h-[120px] bg-white rounded-md flex flex-col items-center justify-center"
+            >
+              <img src="images/companies/vendr.png" class="" alt="" />
+            </div>
+            <div
+              class="max-w-[220px] h-[120px] bg-white rounded-md flex flex-col items-center justify-center"
+            >
+              <img src="images/companies/image 67.png" class="" alt="" />
+            </div>
+            <div
+              class="max-w-[220px] h-[120px] bg-white rounded-md flex flex-col items-center justify-center"
+            >
+              <img src="images/companies/image 50.png" class="" alt="" />
+            </div>
+            <div
+              class="max-w-[220px] h-[120px] bg-white rounded-md flex flex-col items-center justify-center"
+            >
+              <img src="images/companies/image 51.png" class="" alt="" />
+            </div>
+            <div
+              class="max-w-[220px] h-[120px] bg-white rounded-md flex flex-col items-center justify-center"
+            >
+              <img src="images/companies/Group 166.png" class="" alt="" />
+            </div>
+            <div
+              class="max-w-[220px] h-[120px] bg-white rounded-md flex flex-col items-center justify-center"
+            >
+              <img src="images/companies/image 55.png" class="" alt="" />
+            </div>
+            <div
+              class="max-w-[220px] h-[120px] bg-white rounded-md flex flex-col items-center justify-center"
+            >
+              <img src="images/companies/image 52.png" class="" alt="" />
+            </div>
+
+            <div
+              class="max-w-[220px] h-[120px] bg-white rounded-md flex flex-col items-center justify-center"
+            >
+              <img src="images/companies/image 54.png" class="" alt="" />
+            </div>
+            <div
+              class="max-w-[220px] h-[120px] bg-white rounded-md flex flex-col items-center justify-center"
+            >
+              <img src="images/companies/image 67.png" class="" alt="" />
+            </div>
+            <div
+              class="max-w-[220px] h-[120px] bg-white rounded-md flex flex-col items-center justify-center"
+            >
+              <img src="images/companies/flywire.png" class="" alt="" />
+            </div>
+            <div
+              class="max-w-[220px] h-[120px] bg-white rounded-md flex flex-col items-center justify-center"
+            >
+              <img src="images/companies/quovo_logo.png" class="" alt="" />
+            </div>
+            <div
+              class="max-w-[220px] h-[120px] bg-white rounded-md flex flex-col items-center justify-center"
+            >
+              <img src="images/companies/Vector.png" class="" alt="" />
+            </div>
+            <div
+              class="max-w-[220px] h-[120px] bg-white rounded-md flex flex-col items-center justify-center"
+            >
+              <img
+                src="images/companies/nota_bene_logo 1.png"
+                class=""
+                alt=""
+              />
+            </div>
+            <div
+              class="max-w-[220px] h-[120px] bg-white rounded-md flex flex-col items-center justify-center"
+            >
+              <img
+                src="images/companies/Recurly_Logo_Purple 1.png"
+                class=""
+                alt=""
+              />
+            </div>
+            <div
+              class="max-w-[220px] h-[120px] bg-white rounded-md flex flex-col items-center justify-center"
+            >
+              <img src="images/companies/Group 169.png" class="" alt="" />
+            </div>
+            <div
+              class="max-w-[220px] h-[120px] bg-white rounded-md flex flex-col items-center justify-center"
+            >
+              <img
+                src="images/companies/kensho-social-card 2.png"
+                class=""
+                alt=""
+              />
+            </div>
+            <div
+              class="max-w-[220px] h-[120px] bg-white rounded-md flex flex-col items-center justify-center"
+            >
+              <img src="images/companies/advisor.png" class="" alt="" />
+            </div>
+            <div
+              class="max-w-[220px] h-[120px] bg-white rounded-md flex flex-col items-center justify-center"
+            >
+              <img
+                src="images/companies/argyle-black-l 2.png"
+                class=""
+                alt=""
+              />
+            </div>
+            <div
+              class="max-w-[220px] h-[120px] bg-white rounded-md flex flex-col items-center justify-center"
+            >
+              <img
+                src="images/companies/ss-logo-2color-black 1.png"
+                class=""
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer
+        id="footer"
+        class="w-full max-w-[79.5625rem] min-h-[47.5rem] bg-[#E6E6E6] relative lg:mr-20 flex flex-col items-end"
+      >
+        <div
+          class="w-full h-full max-w-[73.75rem] grid grid-cols-1 gap-10 sm:grid-cols-2 relative py-20 pr-10 max-md:flex max-md:flex-col max-md:justify-center max-md:items-center max-lg:px-5"
+        >
+          <div>
+            <div class="max-w-[28.375rem] w-full">
+              <h2
+                class="font-Nantes font-normal text-4xl leading-[3.06rem] text-black"
+              >
+                Experience remarkable WordPress products with a new level of
+                power, beauty, and human-centered designs.
+              </h2>
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row gap-10 lg:gap-40">
+            <div class="flex flex-col gap-5">
+              <a href="#header">
+                <button
+                  class="text-[#9FA0A1] font-messina-sans font-bold text-xl leading-6"
+                >
+                  Jump to
+                </button>
+              </a>
+              <nav>
+                <ul
+                  class="font-neue-haas-unica font-normal text-xl leading-[1.8825rem] text-[#115CD9] flex flex-wrap md:flex-col gap-5 md:gap-2"
+                >
+                  <li><a href="">About Us</a></li>
+                  <li><a href="">Portfolio</a></li>
+                  <li><a href="">News</a></li>
+                  <li><a href="">Stories</a></li>
+                  <li><a href="">Jobs</a></li>
+                  <li><a href="">About Us</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div
+              class="font-messina-sans text-[#191618] *:w-full flex flex-wrap md:flex-col gap-5"
+            >
+              <div class="flex flex-col gap-2 max-w-[300px]">
+                <span class="font-bold text-xl leading-6">Cambridge</span>
+                <div class="font-normal text-xl">
+                  <h4 class="flex flex-wrap">
+                    <span class=" ">70728 Yost Burg,</span>
+                    <span>North Magdaleneview,</span>
+                    <span>UT 97952-2814</span>
+                  </h4>
+                </div>
+                <div class="h-[1px] w-[16.125rem] bg-[#9FA0A1] mt-5"></div>
+              </div>
+              <div class="flex flex-col gap-2 max-w-[300px]">
+                <span class="font-bold text-xl leading-6">London</span>
+                <div class="font-normal text-xl">
+                  <h4 class="flex flex-wrap">
+                    <span class=" ">Suite 292 903 Stehr Streets, </span>
+                    <span>Langworthtown,</span>
+                    <span>SC 94577-9465</span>
+                  </h4>
+                </div>
+                <div class="h-[1px] w-[16.125rem] bg-[#9FA0A1] mt-5"></div>
+              </div>
+              <div class="flex flex-col gap-2 max-w-[300px]">
+                <span class="font-bold text-xl leading-6">San Francisco</span>
+                <div class="font-normal text-xl">
+                  <h4 class="flex flex-wrap">
+                    <span class=" ">19837 Gilberto Lodge, </span>
+                    <span>Lake Kendallville,</span>
+                    <span>Colorado - 97392, Bhutan</span>
+                  </h4>
+                </div>
+                <div class="h-[1px] w-[16.125rem] bg-[#9FA0A1] mt-5"></div>
+              </div>
+              <div class="flex gap-5">
+                <a href=""><img src="images/linkedin.svg" alt="" /></a>
+                <a href=""> <img src="images/twitter.svg" alt="" /></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Copyright section -->
+          <div
+            class="flex flex-col gap-3 lg:absolute left-0 bottom-10 lg:w-1/2 max-w-[32.3125rem]"
+          >
+            <nav class="">
+              <ul
+                class="flex flow-row gap-5 font-messina-sans font-bold text-sm leading-[19.04px] text-[#9FA0A1]"
+              >
+                <li>
+                  <span>&copy;2024</span>
+                </li>
+                <li>
+                  <a href="">About WPPOOL</a>
+                </li>
+                <li>
+                  <a href="">About WPPOOL</a>
+                </li>
+              </ul>
+            </nav>
+            <p
+              class="font-messina-sans font-normal text-sm leading-[19.04px] text-black"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              mollitia, molestiae quas vel sint commodi repudiandae consequuntur
+              voluptatum laborum numquam blanditiis harum quisquam eius sed odit
+              fugiat iusto fuga praesentium optio, eaque rerum! Provident
+              similique accusantium nemo autem. Veritatis obcaecati tenetur iure
+              eius earum ut molestias architecto voluptate aliquam nihil,
+              eveniet aliquid culpa officia aut! Impedit sit sunt quaera
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      const tableData = [
+        {
+          company: "Adyen",
+          symbol: "AFRM",
+          category: "Payments",
+          price: "$17.15",
+          revenue: "$50.5",
+          margin: "49.0%",
+          growth: "15.8%",
+          score: "6.3",
+          change: "24.3%",
+        },
+        {
+          company: "Affirm",
+          symbol: "AFRM",
+          category: "Lending",
+          price: "$16.12",
+          revenue: "$4.7",
+          margin: "32.0%",
+          growth: "48.7%",
+          score: "4.9",
+          change: "77.1%",
+        },
+        {
+          company: "Alkami Technology",
+          symbol: "ALKT",
+          category: "B2B SaaS",
+          price: "$16.27",
+          revenue: "$1.5",
+          margin: "34.0%",
+          growth: "53.0%",
+          score: "7.0",
+          change: "10.0%",
+        },
+        {
+          company: "AvidXchange",
+          symbol: "AVDX",
+          category: "Payments",
+          price: "$10.21",
+          revenue: "$2.0",
+          margin: "27.0%",
+          growth: "61.5%",
+          score: "6.0",
+          change: "10.5%",
+        },
+        {
+          company: "Bakkt Holdings",
+          symbol: "BKKT",
+          category: "Wealth",
+          price: "$1.32",
+          revenue: "$0.1",
+          margin: "38%",
+          growth: "--",
+          score: "0.4",
+          change: "13.8%",
+        },
+        {
+          company: "Virtu Financial Inc",
+          symbol: "VIRT",
+          category: "Wealth",
+          price: "$17.0",
+          revenue: "$3.1",
+          margin: "-22.0%",
+          growth: "38.2%",
+          score: "2.6",
+          change: "-17.8%",
+        },
+        {
+          company: "Adyen",
+          symbol: "AFRM",
+          category: "Payments",
+          price: "$17.15",
+          revenue: "$50.5",
+          margin: "49.0%",
+          growth: "15.8%",
+          score: "6.3",
+          change: "24.3%",
+        },
+        {
+          company: "Affirm",
+          symbol: "AFRM",
+          category: "Lending",
+          price: "$16.12",
+          revenue: "$4.7",
+          margin: "32.0%",
+          growth: "48.7%",
+          score: "4.9",
+          change: "77.1%",
+        },
+        {
+          company: "Alkami Technology",
+          symbol: "ALKT",
+          category: "B2B SaaS",
+          price: "$16.27",
+          revenue: "$1.5",
+          margin: "34.0%",
+          growth: "53.0%",
+          score: "7.0",
+          change: "10.0%",
+        },
+        {
+          company: "AvidXchange",
+          symbol: "AVDX",
+          category: "Payments",
+          price: "$10.21",
+          revenue: "$2.0",
+          margin: "27.0%",
+          growth: "61.5%",
+          score: "6.0",
+          change: "10.5%",
+        },
+        {
+          company: "Adyen",
+          symbol: "AFRM",
+          category: "Payments",
+          price: "$17.15",
+          revenue: "$50.5",
+          margin: "49.0%",
+          growth: "15.8%",
+          score: "6.3",
+          change: "24.3%",
+        },
+        {
+          company: "Affirm",
+          symbol: "AFRM",
+          category: "Lending",
+          price: "$16.12",
+          revenue: "$4.7",
+          margin: "32.0%",
+          growth: "48.7%",
+          score: "4.9",
+          change: "77.1%",
+        },
+        {
+          company: "Alkami Technology",
+          symbol: "ALKT",
+          category: "B2B SaaS",
+          price: "$16.27",
+          revenue: "$1.5",
+          margin: "34.0%",
+          growth: "53.0%",
+          score: "7.0",
+          change: "10.0%",
+        },
+        {
+          company: "AvidXchange",
+          symbol: "AVDX",
+          category: "Payments",
+          price: "$10.21",
+          revenue: "$2.0",
+          margin: "27.0%",
+          growth: "61.5%",
+          score: "6.0",
+          change: "10.5%",
+        },
+        {
+          company: "Bakkt Holdings",
+          symbol: "BKKT",
+          category: "Wealth",
+          price: "$1.32",
+          revenue: "$0.1",
+          margin: "38%",
+          growth: "--",
+          score: "0.4",
+          change: "13.8%",
+        },
+        {
+          company: "Virtu Financial Inc",
+          symbol: "VIRT",
+          category: "Wealth",
+          price: "$17.0",
+          revenue: "$3.1",
+          margin: "-22.0%",
+          growth: "38.2%",
+          score: "2.6",
+          change: "-17.8%",
+        },
+        {
+          company: "Adyen",
+          symbol: "AFRM",
+          category: "Payments",
+          price: "$17.15",
+          revenue: "$50.5",
+          margin: "49.0%",
+          growth: "15.8%",
+          score: "6.3",
+          change: "24.3%",
+        },
+        {
+          company: "Affirm",
+          symbol: "AFRM",
+          category: "Lending",
+          price: "$16.12",
+          revenue: "$4.7",
+          margin: "32.0%",
+          growth: "48.7%",
+          score: "4.9",
+          change: "77.1%",
+        },
+        {
+          company: "Alkami Technology",
+          symbol: "ALKT",
+          category: "B2B SaaS",
+          price: "$16.27",
+          revenue: "$1.5",
+          margin: "34.0%",
+          growth: "53.0%",
+          score: "7.0",
+          change: "10.0%",
+        },
+        {
+          company: "AvidXchange",
+          symbol: "AVDX",
+          category: "Payments",
+          price: "$10.21",
+          revenue: "$2.0",
+          margin: "27.0%",
+          growth: "61.5%",
+          score: "6.0",
+          change: "10.5%",
+        },
+        {
+          company: "Adyen",
+          symbol: "AFRM",
+          category: "Payments",
+          price: "$17.15",
+          revenue: "$50.5",
+          margin: "49.0%",
+          growth: "15.8%",
+          score: "6.3",
+          change: "24.3%",
+        },
+        {
+          company: "Affirm",
+          symbol: "AFRM",
+          category: "Lending",
+          price: "$16.12",
+          revenue: "$4.7",
+          margin: "32.0%",
+          growth: "48.7%",
+          score: "4.9",
+          change: "77.1%",
+        },
+        {
+          company: "Alkami Technology",
+          symbol: "ALKT",
+          category: "B2B SaaS",
+          price: "$16.27",
+          revenue: "$1.5",
+          margin: "34.0%",
+          growth: "53.0%",
+          score: "7.0",
+          change: "10.0%",
+        },
+        {
+          company: "AvidXchange",
+          symbol: "AVDX",
+          category: "Payments",
+          price: "$10.21",
+          revenue: "$2.0",
+          margin: "27.0%",
+          growth: "61.5%",
+          score: "6.0",
+          change: "10.5%",
+        },
+        {
+          company: "Bakkt Holdings",
+          symbol: "BKKT",
+          category: "Wealth",
+          price: "$1.32",
+          revenue: "$0.1",
+          margin: "38%",
+          growth: "--",
+          score: "0.4",
+          change: "13.8%",
+        },
+        {
+          company: "Virtu Financial Inc",
+          symbol: "VIRT",
+          category: "Wealth",
+          price: "$17.0",
+          revenue: "$3.1",
+          margin: "-22.0%",
+          growth: "38.2%",
+          score: "2.6",
+          change: "-17.8%",
+        },
+        {
+          company: "Adyen",
+          symbol: "AFRM",
+          category: "Payments",
+          price: "$17.15",
+          revenue: "$50.5",
+          margin: "49.0%",
+          growth: "15.8%",
+          score: "6.3",
+          change: "24.3%",
+        },
+        {
+          company: "Affirm",
+          symbol: "AFRM",
+          category: "Lending",
+          price: "$16.12",
+          revenue: "$4.7",
+          margin: "32.0%",
+          growth: "48.7%",
+          score: "4.9",
+          change: "77.1%",
+        },
+        {
+          company: "Alkami Technology",
+          symbol: "ALKT",
+          category: "B2B SaaS",
+          price: "$16.27",
+          revenue: "$1.5",
+          margin: "34.0%",
+          growth: "53.0%",
+          score: "7.0",
+          change: "10.0%",
+        },
+        {
+          company: "AvidXchange",
+          symbol: "AVDX",
+          category: "Payments",
+          price: "$10.21",
+          revenue: "$2.0",
+          margin: "27.0%",
+          growth: "61.5%",
+          score: "6.0",
+          change: "10.5%",
+        },
+        {
+          company: "Adyen",
+          symbol: "AFRM",
+          category: "Payments",
+          price: "$17.15",
+          revenue: "$50.5",
+          margin: "49.0%",
+          growth: "15.8%",
+          score: "6.3",
+          change: "24.3%",
+        },
+        {
+          company: "Affirm",
+          symbol: "AFRM",
+          category: "Lending",
+          price: "$16.12",
+          revenue: "$4.7",
+          margin: "32.0%",
+          growth: "48.7%",
+          score: "4.9",
+          change: "77.1%",
+        },
+        {
+          company: "Alkami Technology",
+          symbol: "ALKT",
+          category: "B2B SaaS",
+          price: "$16.27",
+          revenue: "$1.5",
+          margin: "34.0%",
+          growth: "53.0%",
+          score: "7.0",
+          change: "10.0%",
+        },
+        {
+          company: "AvidXchange",
+          symbol: "AVDX",
+          category: "Payments",
+          price: "$10.21",
+          revenue: "$2.0",
+          margin: "27.0%",
+          growth: "61.5%",
+          score: "6.0",
+          change: "10.5%",
+        },
+        {
+          company: "Bakkt Holdings",
+          symbol: "BKKT",
+          category: "Wealth",
+          price: "$1.32",
+          revenue: "$0.1",
+          margin: "38%",
+          growth: "--",
+          score: "0.4",
+          change: "13.8%",
+        },
+        {
+          company: "Virtu Financial Inc",
+          symbol: "VIRT",
+          category: "Wealth",
+          price: "$17.0",
+          revenue: "$3.1",
+          margin: "-22.0%",
+          growth: "38.2%",
+          score: "2.6",
+          change: "-17.8%",
+        },
+        {
+          company: "Adyen",
+          symbol: "AFRM",
+          category: "Payments",
+          price: "$17.15",
+          revenue: "$50.5",
+          margin: "49.0%",
+          growth: "15.8%",
+          score: "6.3",
+          change: "24.3%",
+        },
+        {
+          company: "Affirm",
+          symbol: "AFRM",
+          category: "Lending",
+          price: "$16.12",
+          revenue: "$4.7",
+          margin: "32.0%",
+          growth: "48.7%",
+          score: "4.9",
+          change: "77.1%",
+        },
+        {
+          company: "Alkami Technology",
+          symbol: "ALKT",
+          category: "B2B SaaS",
+          price: "$16.27",
+          revenue: "$1.5",
+          margin: "34.0%",
+          growth: "53.0%",
+          score: "7.0",
+          change: "10.0%",
+        },
+        {
+          company: "AvidXchange",
+          symbol: "AVDX",
+          category: "Payments",
+          price: "$10.21",
+          revenue: "$2.0",
+          margin: "27.0%",
+          growth: "61.5%",
+          score: "6.0",
+          change: "10.5%",
+        },
+        {
+          company: "Adyen",
+          symbol: "AFRM",
+          category: "Payments",
+          price: "$17.15",
+          revenue: "$50.5",
+          margin: "49.0%",
+          growth: "15.8%",
+          score: "6.3",
+          change: "24.3%",
+        },
+        {
+          company: "Affirm",
+          symbol: "AFRM",
+          category: "Lending",
+          price: "$16.12",
+          revenue: "$4.7",
+          margin: "32.0%",
+          growth: "48.7%",
+          score: "4.9",
+          change: "77.1%",
+        },
+        {
+          company: "Alkami Technology",
+          symbol: "ALKT",
+          category: "B2B SaaS",
+          price: "$16.27",
+          revenue: "$1.5",
+          margin: "34.0%",
+          growth: "53.0%",
+          score: "7.0",
+          change: "10.0%",
+        },
+        {
+          company: "AvidXchange",
+          symbol: "AVDX",
+          category: "Payments",
+          price: "$10.21",
+          revenue: "$2.0",
+          margin: "27.0%",
+          growth: "61.5%",
+          score: "6.0",
+          change: "10.5%",
+        },
+        {
+          company: "Bakkt Holdings",
+          symbol: "BKKT",
+          category: "Wealth",
+          price: "$1.32",
+          revenue: "$0.1",
+          margin: "38%",
+          growth: "--",
+          score: "0.4",
+          change: "13.8%",
+        },
+        {
+          company: "Virtu Financial Inc",
+          symbol: "VIRT",
+          category: "Wealth",
+          price: "$17.0",
+          revenue: "$3.1",
+          margin: "-22.0%",
+          growth: "38.2%",
+          score: "2.6",
+          change: "-17.8%",
+        },
+        {
+          company: "Adyen",
+          symbol: "AFRM",
+          category: "Payments",
+          price: "$17.15",
+          revenue: "$50.5",
+          margin: "49.0%",
+          growth: "15.8%",
+          score: "6.3",
+          change: "24.3%",
+        },
+        {
+          company: "Affirm",
+          symbol: "AFRM",
+          category: "Lending",
+          price: "$16.12",
+          revenue: "$4.7",
+          margin: "32.0%",
+          growth: "48.7%",
+          score: "4.9",
+          change: "77.1%",
+        },
+        {
+          company: "Alkami Technology",
+          symbol: "ALKT",
+          category: "B2B SaaS",
+          price: "$16.27",
+          revenue: "$1.5",
+          margin: "34.0%",
+          growth: "53.0%",
+          score: "7.0",
+          change: "10.0%",
+        },
+        {
+          company: "AvidXchange",
+          symbol: "AVDX",
+          category: "Payments",
+          price: "$10.21",
+          revenue: "$2.0",
+          margin: "27.0%",
+          growth: "61.5%",
+          score: "6.0",
+          change: "10.5%",
+        },
+        {
+          company: "Adyen",
+          symbol: "AFRM",
+          category: "Payments",
+          price: "$17.15",
+          revenue: "$50.5",
+          margin: "49.0%",
+          growth: "15.8%",
+          score: "6.3",
+          change: "24.3%",
+        },
+        {
+          company: "Affirm",
+          symbol: "AFRM",
+          category: "Lending",
+          price: "$16.12",
+          revenue: "$4.7",
+          margin: "32.0%",
+          growth: "48.7%",
+          score: "4.9",
+          change: "77.1%",
+        },
+        {
+          company: "Alkami Technology",
+          symbol: "ALKT",
+          category: "B2B SaaS",
+          price: "$16.27",
+          revenue: "$1.5",
+          margin: "34.0%",
+          growth: "53.0%",
+          score: "7.0",
+          change: "10.0%",
+        },
+        {
+          company: "AvidXchange",
+          symbol: "AVDX",
+          category: "Payments",
+          price: "$10.21",
+          revenue: "$2.0",
+          margin: "27.0%",
+          growth: "61.5%",
+          score: "6.0",
+          change: "10.5%",
+        },
+        {
+          company: "Bakkt Holdings",
+          symbol: "BKKT",
+          category: "Wealth",
+          price: "$1.32",
+          revenue: "$0.1",
+          margin: "38%",
+          growth: "--",
+          score: "0.4",
+          change: "13.8%",
+        },
+        {
+          company: "Virtu Financial Inc",
+          symbol: "VIRT",
+          category: "Wealth",
+          price: "$17.0",
+          revenue: "$3.1",
+          margin: "-22.0%",
+          growth: "38.2%",
+          score: "2.6",
+          change: "-17.8%",
+        },
+        {
+          company: "Adyen",
+          symbol: "AFRM",
+          category: "Payments",
+          price: "$17.15",
+          revenue: "$50.5",
+          margin: "49.0%",
+          growth: "15.8%",
+          score: "6.3",
+          change: "24.3%",
+        },
+        {
+          company: "Affirm",
+          symbol: "AFRM",
+          category: "Lending",
+          price: "$16.12",
+          revenue: "$4.7",
+          margin: "32.0%",
+          growth: "48.7%",
+          score: "4.9",
+          change: "77.1%",
+        },
+        {
+          company: "Alkami Technology",
+          symbol: "ALKT",
+          category: "B2B SaaS",
+          price: "$16.27",
+          revenue: "$1.5",
+          margin: "34.0%",
+          growth: "53.0%",
+          score: "7.0",
+          change: "10.0%",
+        },
+        {
+          company: "AvidXchange",
+          symbol: "AVDX",
+          category: "Payments",
+          price: "$10.21",
+          revenue: "$2.0",
+          margin: "27.0%",
+          growth: "61.5%",
+          score: "6.0",
+          change: "10.5%",
+        },
+      ];
+
+      const tableBody = document.getElementById("table-body");
+
+      tableBody.innerHTML = tableData
+        .map(
+          (row, index) => `
+            <tr class="odd:bg-[#F3F3F3] h-[40px] w-full text-center text-[1rem] leading-[1.2rem] font-normal " >
+                <td class="px-4 text-start rounded-md">${row.company}</td>
+                <td class="px-4 "></td>
+
+                <td class="px-4 ">${row.symbol}</td>
+                <td class="px-4 ">${row.category}</td>
+                <td class="px-4 "></td>
+                <td class="px-4 "></td>
+                <td class="px-4 ">${row.price}</td>
+                <td class="px-4 ">${row.revenue}</td>
+                <td class="px-4 ">${row.margin}</td>
+                <td class="px-4 ">${row.growth}</td>
+                <td class="px-4 ">${row.score}</td>
+                <td class="px-4 rounded-md ">${row.change}</td>
+            </tr>
+        `,
+        )
+        .join("");
+    </script>
+
+    <script src="ChartJS.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8"></script>
+    <script src="path/to/chartjs-plugin-zoom/dist/chartjs-plugin-zoom.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
