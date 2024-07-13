@@ -346,26 +346,31 @@
                   <div
                     class="bg-[#EFF3F6] w-[232px] flex gap-0.5 *:px-2 *:py-1.5 *:rounded-full py-1 px-1 rounded-full items-center justify-end"
                   >
-                    <span
-                      class="text-[#748DA1] text-xs leading-[14.4px] font-messina-sans"
-                      >1Y</span
+                    <button
+                      class="text-[#748DA1] text-xs leading-[14.4px] font-messina-sans hover:bg-gray-200"
                     >
-                    <span
-                      class="text-[#748DA1] text-xs leading-[14.4px] font-messina-sans"
-                      >YTD</span
+                      1Y
+                    </button>
+                    <button
+                      class="text-[#748DA1] text-xs leading-[14.4px] font-messina-sans hover:bg-gray-200"
                     >
-                    <span
-                      class="text-xs leading-[14.4px] font-messina-sans bg-[#2042B6] text-white"
-                      >6M</span
+                      YTD
+                    </button>
+                    <button
+                      class="text-xs leading-[14.4px] font-messina-sans bg-[#2042B6] shadow-[0px_4px_6px_0px_#0000001F] text-white"
                     >
-                    <span
-                      class="text-[#748DA1] text-xs leading-[14.4px] font-messina-sans"
-                      >1M</span
+                      6M
+                    </button>
+                    <button
+                      class="text-[#748DA1] text-xs leading-[14.4px] font-messina-sans hover:bg-gray-200"
                     >
-                    <span
-                      class="text-[#748DA1] text-xs leading-[14.4px] font-messina-sans"
-                      >1W</span
+                      1M
+                    </button>
+                    <button
+                      class="text-[#748DA1] text-xs leading-[14.4px] font-messina-sans hover:bg-gray-200"
                     >
+                      1W
+                    </button>
                   </div>
                 </div>
                 <div>
@@ -1931,11 +1936,11 @@
         .join("");
     </script>
 
-    <script src="ChartJS.js"></script>
+    <script src="ChartJSCDN.js"></script>
+    <script src="script.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8"></script>
     <script src="path/to/chartjs-plugin-zoom/dist/chartjs-plugin-zoom.min.js"></script>
-
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
   </body>
 </html>
