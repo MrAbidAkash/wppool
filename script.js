@@ -393,8 +393,9 @@ new Chart(ctx, {
   },
   options: {
     interaction: {
-      intersect: false,
+      mode: "index",
     },
+    pointHitRadius: 10,
     responsive: true,
     scales: {
       y: {
