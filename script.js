@@ -356,85 +356,88 @@ const externalTooltipHandler = (context) => {
     tooltip.options.padding + "px " + tooltip.options.padding + "px";
 };
 
-new Chart(ctx, {
-  type: "line",
-  data: {
-    datasets: [
-      {
-        label: "WPPOOL",
-        data: data,
-        borderWidth: 2,
-        radius: 0,
-        borderColor: "#FC714D",
-      },
-      {
-        label: "Google",
-        data: data2,
-        borderWidth: 2,
-        radius: 0,
-        borderColor: "#615DE3",
-      },
-      {
-        label: "Microsoft",
-        data: data3,
-        borderWidth: 2,
-        radius: 0,
-        borderColor: "#AFCD80",
-      },
-      {
-        label: "Twitter",
-        data: data4,
-        borderWidth: 2,
-        radius: 0,
-        borderColor: "#6F34A1",
-        color: "#6F34A1",
-      },
-    ],
-  },
-  options: {
-    interaction: {
-      mode: "index",
-    },
-    pointHitRadius: 10,
-    responsive: true,
-    scales: {
-      y: {
-        min: -10,
-        max: 100,
-        ticks: {
-          stepSize: 10,
+window.onload = function () { 
+  new Chart(ctx, {
+    type: "line",
+    data: {
+      datasets: [
+        {
+          label: "WPPOOL",
+          data: data,
+          borderWidth: 2,
+          radius: 0,
+          borderColor: "#FC714D",
         },
-      },
-      x: {
-        type: "time",
-        time: {
-          unit: "month",
-          /*           tooltipFormat: "MMM YYYY",
-           */
+        {
+          label: "Google",
+          data: data2,
+          borderWidth: 2,
+          radius: 0,
+          borderColor: "#615DE3",
         },
-      },
+        {
+          label: "Microsoft",
+          data: data3,
+          borderWidth: 2,
+          radius: 0,
+          borderColor: "#AFCD80",
+        },
+        {
+          label: "Twitter",
+          data: data4,
+          borderWidth: 2,
+          radius: 0,
+          borderColor: "#6F34A1",
+          color: "#6F34A1",
+        },
+      ],
     },
-
-    plugins: {
-      tooltip: {
-        enabled: false,
-        position: "nearest",
-        external: externalTooltipHandler,
+    options: {
+      interaction: {
+        mode: "index",
       },
-      chartAreaBorder: {
-        borderColor: "red",
-        borderWidth: 2,
-        borderDash: [5, 5],
-        borderDashOffset: 2,
+      pointHitRadius: 10,
+      responsive: true,
+      scales: {
+        y: {
+          min: -10,
+          max: 100,
+          ticks: {
+            stepSize: 10,
+          },
+        },
+        x: {
+          type: "time",
+          time: {
+            unit: "month",
+            /*           tooltipFormat: "MMM YYYY",
+             */
+          },
+        },
       },
 
-      legend: {
-        position: "bottom",
-        labels: {
-          usePointStyle: false,
+      plugins: {
+        tooltip: {
+          enabled: false,
+          position: "nearest",
+          external: externalTooltipHandler,
         },
-        pointStyle: "crossRot",
+        chartAreaBorder: {
+          borderColor: "red",
+          borderWidth: 2,
+          borderDash: [5, 5],
+          borderDashOffset: 2,
+        },
+
+        legend: {
+          position: "bottom",
+          labels: {
+            usePointStyle: false,
+          },
+          pointStyle: "crossRot",
+        },
       },
     },
-  },
-});
+  });
+
+}
